@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media(min-width:768px){
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    max-width: 1200px;
+    margin: 0 auto;
+      
+    
+}
+.grid__content{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    height: 250px;
+    justify-content: space-between;
+}
+
+.grid__img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    
+
+}
+}

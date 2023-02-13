@@ -1,0 +1,22 @@
+.product-card{
+	display: flex;
+	
+}
+
+.right-conteiner{
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+}
+input{
+	padding: 15px 20px;
+	color: white;
+	border-radius: 20px;
+	border-width: 0px;
+}
+.basket{
+	background:#eb2d2d;
+}
+.buy{
+	background: #ff7b0d;
+}

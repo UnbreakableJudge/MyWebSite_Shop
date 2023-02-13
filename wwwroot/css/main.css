@@ -1,0 +1,278 @@
+
+*
+{
+	
+	box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+
+body
+{  width: 100%;
+	font-size: 16px;
+	font-family: 'Times New Roman', Times, serif;
+	background-image: url(../igm/white-scratone.png);
+}
+
+a{
+	text-decoration: none;
+	
+	
+}
+
+ @media(min-width: 840px)/* Для адаптивности страницы*/
+ {.flex
+ 	{ padding-top: 40px;
+ 	  display: grid;/* Сайт разработан при помощи grid */
+	
+	grid-gap: 10px;/* Растояние между блоками */
+	grid-template-columns: repeat(9, 1fr);/* Создание 9 колонок по ширине 1fr */
+  
+   /* Распределяем пространство */
+	grid-template-areas:
+	"hd hd afh1 afh1 afh1 afh1 afh1 afh1 afh1"
+	"mu mu afh1 afh1 afh1 afh1 afh1 afh1 afh1"
+	"mu mu cer cer cer cer cer cer cer"
+	"mu mu cer cer cer cer cer cer cer"
+	"mu mu cer cer cer cer cer cer cer"
+	"lin lin lin lin lin lin lin lin lin"
+	"pra pra pra pra pra pra pra pra pra"
+    
+
+ }
+.sticky_panel{ 
+	z-index: 1000;
+	width: 100%;
+	height: 30px;
+	background: white;
+	position:fixed;
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+}
+.search{
+	flex-grow: 1;
+}
+.searching
+{	
+	display: flex;
+}
+.field {
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+.text_pole{ 
+   box-sizing: border-box;
+   flex-grow: 2;
+}
+.submite_pole
+{  
+	max-width: 70px;
+	flex-grow: 1;
+}
+.Autorisation
+{  
+	flex-grow: 0;
+	display: flex;
+	justify-content: right;
+
+}
+.Autorisation_1{
+  margin-left: 10px;
+}
+
+}
+.header/* Логотип  */
+ {
+ 	grid-area: hd; /* Псевдоним  */
+ }
+
+ .afh	/* Реклама айфонов\хуавев  */
+ {
+ 	grid-area: afh1; /* Псевдоним  */
+ }
+ .menu/* Меню  */
+ {
+ 	grid-area:mu; /* Псевдоним  */
+ 	font-family: Cuprum, Arial, Helvetica, sans-serif;
+ }
+
+
+
+
+.link{/* Связь  */
+	grid-area: lin; 	/* Псевдоним  */
+    
+}
+
+.prava{/* Права  */
+	grid-area: pra; /* Псевдоним  */
+	
+	font-weight: bold;
+	color: #fff;
+	background: #505050;
+	min-height: 30px;
+	line-height: 30px;
+	border-radius: 0 0 10px 10px;
+	
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.71);
+}
+
+
+
+.vl_men {/* Убираем авт. выравнивание */
+	margin: 0;
+	padding: 0;
+}
+
+.vl_menu > ul{/* Обращение ко всем наследникам ul в классе vl_menu */
+	padding:0px 0px 0px 0px ;/* Убираем авт. выравнивание */
+	margin-top:0px;
+	margin-bottom: 0px;
+	
+
+}
+ ul, ol{
+ list-style: none;/* Убираем стиль пунктов */
+}  
+.vl_menu> ul li a{
+ display: block;	
+ background: #ffa84c; /* Красивый background */
+background: -moz-linear-gradient(top, #ffa84c 0%, #ff7b0d 100%); 
+background: -webkit-linear-gradient(top, #ffa84c 0%,#ff7b0d 100%); 
+background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); 
+ padding: 15px 20px 15px 20px; 
+ font-size: 14px;
+ color: #454547;
+
+ text-decoration: none;/* Чтоб текст не был подчёркнут */
+
+ 
+
+
+}
+.vl_menu li a:hover{/* Анимация меню */
+ background: #8B0000;
+ color: black;
+ box-shadow: 1px 5px 10px -5px black;/* Тень */
+ transition: all 0.5s ease;/* Длительность анимации */
+}  
+
+.icon_menu_c{width: 14px; /* Иконки меню*/
+	height: 14px;
+}
+.vl_menu li ul { /*Раскладное меню  */ 
+ 
+ position: absolute;
+
+ padding-left: 150px;/* Сдвиг раскладного меню */
+  display: none;/* Скрыто до момента наведение на пункт в меню */
+
+} 
+.vl_menu li > ul li{
+ border: 1px solid #c7c8ca;
+}    
+.vl_menu li > ul li a{
+ padding: 10px;
+ background: #E0FFFF;
+ color: black;
+ font-family: Arial;
+ text-transform: none;
+ 
+} 
+.vl_menu li:hover > ul{/* При наведении на пункт в меню раскрывается вложенное меню */
+
+
+ display: block;
+}   
+
+.afh__img{
+	width: 391px;
+}
+.container{/* Контейнер  */
+	padding-left: 15px;
+	grid-area: cer; 
+	
+	
+
+}
+
+
+   a:visited {
+    color: #8B0000; /* Цвет посещенных ссылок */
+   }
+   a:active {
+    color: #00CED1; /* Цвет активных ссылок */
+   }
+
+
+.brand  /* Логотип*/ {
+	border-radius: 0 0 10px 10px;/* Тень бренда*/
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.71);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.71);
+
+    width: 400px;
+	height: 200px;
+	object-fit:fill ;
+
+
+}
+
+
+
+
+#h3 /* Реклама 1 картинка*/{
+	width: 100%;
+
+
+}
+#h4 /* Реклама 1 картинка*/{
+	width: 100%;
+
+
+}
+
+.link{/* Связь  */
+	grid-area: lin; 	/* Псевдоним  */
+    display: flex;
+	justify-content: space-between;
+	
+}
+
+.link__right{
+	flex-grow: 1;
+}
+
+.link_left{
+	flex-grow: 1;
+}
+.link__about-company{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	height: 50px;
+	
+ 
+}
+.header-about-company{
+	font-size:32px;
+}
+
+.lol{
+	position: relative;
+}
+.link__left-link{
+	height: 32px;
+	width: 32px;
+}
+.icon_menu/* Иконки Соц. сетей*/
+{
+	width: 32px;
+	height: 32px;
+	
+}
+

@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="~/css/main.css"><!--подключение стиля -->
+    <link rel="shortcut icon" href="~/img/a.ico" type="image/x-icon"><!--иконка вкладки -->
+    <title>
+        Multibrend
+    </title>
+
+</head>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<body>
+
+    <script type="text/javascript" src="~/js/jqeru.js"></script><!--подключение библиотеки -->
+    <script type="text/javascript" src="~/js/raf.js"></script><!--подключение библиотеки -->
+    <script type="text/javascript" src="~/js/main.js"></script><!--подключение скрипта -->
+    <div class="sticky_panel">
+        <div class="search">
+            <form class="searching">
+                <input type="text" name="q" class="field text_pole" placeholder="Поиск по сайту">
+                <input type="submit" class="field submite_pole" value="Найти">
+            </form>
+        </div>
+        <div class="Autorisation">
+            <!--Grid элемент-->
+
+            <a class="Autorisation_1" asp-action="Autorisation">
+                <u>Вход/Регистрация</u>
+            </a>
+
+
+            <a class="Autorisation_1" href="#">
+                <img src="~/img/korz.png" class="icon_menu_c">
+                <u>Корзина</u>
+            </a>
+        </div>
+    </div>
+    <div class="flex">
+        <!--Grid-->
+        <div class="header">
+            <!--Grid элемент логотип-->
+            <a href="#"><img class="brand" src="~/img/Брэнд.png"></a>
+        </div>
+        <div class="menu">
+            <!--Grid элемент меню-->
+            <div class="vl_menu">
+                <ul>
+                    
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/Smart.png">СМАРТФОНЫ</a>
+                        <ul>
+                            <li><a href="men.html">IPHONE</a></li>
+                            <li><a href="#">Huawei</a></li>
+                            <li><a href="#">One Plas</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/komp.png">КОМПЬЮТЕРЫ</a>
+                        <ul>
+                            <li><a href="#">Офисные</a></li>
+                            <li><a href="#">Игровые</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/kompl.jpg">КОМПЛЕКТУЮЩИЕ</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/Not.png">НОУТБУКИ</a>
+                        <ul>
+                            <li><a href="#">Acer</a></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Lenovo</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/TV.jpg">ТЕЛЕВИЗОРЫ</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/сеть.jpg">СЕТЕВОЕ ОБОРУДОВАНИЕ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/tsad.jpg">ДЛЯ ОГОРОДА</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/kuh.png">ДЛЯ КУХНИ</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/tstul.png">МЕБЕЛЬ ДЛЯ ОФИСА ДОМА</a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="icon_menu_c" src="~/img/tphoto.png">ФОТО И ВИДЕО</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="afh">
+            <a href="https://www.google.ru/"><img class="afh__img" id="h4" src="~/img/Huawei.png" ></a>
+            <a href="https://yandex.ru/"><img class="afh__img" id="h3" src="~/img/Скидки iph.png"></a>
+        </div>
+        <div class="container">
+            @RenderBody()
+        </div>
+
+
+        <div class="link">
+            <!--Grid элемент Связь-->
+                <div class="link__right">
+                    <h2>Техническая поддержка:</h2>
+                    <p>Телефон<a href="tel:+78125535511">+7(912)-553-55-11 </a></p>
+                    <p>Электроная почта :<a href="mailto:tex@tex.ru">tex@tex.ru</a></p>
+                </div>
+                <div class="link__left">
+                    <div class="link__about-company">
+                    <div class="header-about-company">О нас</div>
+                    <a href="#" class="link__left-link"><img class="icon_menu" src="~/img/вк.png"></a>
+                    <a href="#" class="link__left-link"><img class="icon_menu" src="~/img/twitter.jpg"></a>
+                    <a href="#" class="link__left-link"><img class="icon_menu" src="~/img/ютуб.png"></a>
+                    </div>
+                    <p><a href="#">Компания</a></p>
+                    <p><a href="#">Вакансии</a></p>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        <div class="prava">
+            <!--Grid элемент Права-->
+            <center>Multibrend 2020 &copy; Все права защищены.</center>
+        </div>
+    </div>
+</body>
+</html>

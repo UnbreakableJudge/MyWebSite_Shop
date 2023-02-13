@@ -1,0 +1,44 @@
+@model IList<Product> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="~/css/TestMainPage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="Catalog_Goods">
+        <div class="Shelfs">
+            
+            @{
+                
+                for(int i=0;i<5;i++)
+                {   
+                        <div class="Product">
+                            <a href="#"><div class="Product_Image">
+                                <img src="~/@Model[i].ImagePath@Model[i].ImageName">
+                            </div class="Product_Image">
+                            <span>@Model[i].ModelName</span>
+                            <span>@Model[i].Cost</span>
+                            </a>
+                        </div>
+                }
+            }
+        </div>
+        <div class="Shelfs">
+            @{
+                for (int i = 5; i < 10; i++)
+                {
+                    <div class="Product">
+                        <a><img src="~/@Model[i].ImagePath@Model[i].ImageName"></a>
+                        <p><a><span>@Model[i].ModelName</span></a></p>
+                        <p><span>@Model[i].Cost</span></p>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>

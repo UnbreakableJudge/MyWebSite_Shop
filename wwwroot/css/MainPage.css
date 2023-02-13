@@ -1,0 +1,68 @@
+
+
+.item_title/*титул*/{
+   font-size: 25px;
+   font-family: "Times New Roman";
+   margin-bottom: 20px;
+
+}
+ .box_items/*"ящик" с продутами сайта*/{  
+    max-width: 100%;
+    
+    white-space: nowrap;/* Чтоб было всё в было строчку*/
+    overflow: hidden;/* Если не хватает места не появляется scroll*/
+}
+.box_item_2/*"ящик" с продутами сайта*/
+{
+   
+   max-width: 100%;
+   
+    white-space: nowrap;/* Чтоб было всё в было строчку*/
+    overflow: hidden;/* Если не хватает места не появляется scroll*/
+}
+
+ .item_rec/*  продукты*/
+ {            
+    width: 13.16667%;/* Рзамер продутов сайта*/
+    
+    margin-left: 1%;
+    margin-right: 3%;
+   
+    display: inline-block;
+    padding: 4px;
+    overflow: hidden;/* Если не хватает места не появляется scroll*/
+    box-sizing: border-box;/* Элемент не превышал заданные размеры*/
+ }
+ .exam{height: 220px;}/* Для одинакового позиционнирование для каждого товара (фото\описание\цены)*/
+ .exam1{width: 100%;height: 100px;}
+
+ 
+
+.bord/*пространство пустое*/{width: 100%;
+   height: 20px;
+}
+
+
+.price/*цена*/
+{ width: 100%;
+   margin-left: 10%;
+   font-style:italic;/*  Курсив*/
+   font-size: 16px;
+   color: #FF4500;
+}
+.about/*описание*/{
+   overflow: hidden;
+
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    height: 50px;
+   
+
+}
+.bord_items /*пространство пустое*/{
+   
+   width: 100%;
+   height: 30px;
+   margin-top: 30px;
+
+}

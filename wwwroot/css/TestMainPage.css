@@ -1,0 +1,21 @@
+.Catalog_Goods
+{
+	display: grid;
+	margin:20px 0;
+}
+.Shelfs
+{   gap:20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.Product
+{
+	
+	width: 13%;
+}
+
+.Product a> div
+{
+	height: auto;
+}
